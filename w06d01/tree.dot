@@ -1,0 +1,33 @@
+digraph Tree {
+node [shape=box, style="filled, rounded", color="black", fontname=helvetica] ;
+edge [fontname=helvetica] ;
+0 [label=<perimeter_se &le; 0.0609<br/>gini = 0.4684<br/>samples = 398<br/>value = [249, 149]>, fillcolor="#e5813966"] ;
+1 [label=<concavity_worst &le; 0.1161<br/>gini = 0.1005<br/>samples = 245<br/>value = [232, 13]>, fillcolor="#e58139f1"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label=<smoothness_se &le; 0.184<br/>gini = 0.0425<br/>samples = 230<br/>value = [225, 5]>, fillcolor="#e58139f9"] ;
+1 -> 2 ;
+3 [label=<gini = 0.0261<br/>samples = 227<br/>value = [224, 3]>, fillcolor="#e58139fc"] ;
+2 -> 3 ;
+4 [label=<gini = 0.4444<br/>samples = 3<br/>value = [1, 2]>, fillcolor="#399de57f"] ;
+2 -> 4 ;
+5 [label=<concave_pts_mean &le; -0.9392<br/>gini = 0.4978<br/>samples = 15<br/>value = [7, 8]>, fillcolor="#399de520"] ;
+1 -> 5 ;
+6 [label=<gini = 0.0<br/>samples = 5<br/>value = [5, 0]>, fillcolor="#e58139ff"] ;
+5 -> 6 ;
+7 [label=<gini = 0.32<br/>samples = 10<br/>value = [2, 8]>, fillcolor="#399de5bf"] ;
+5 -> 7 ;
+8 [label=<concave_pts_mean &le; -0.8585<br/>gini = 0.1975<br/>samples = 153<br/>value = [17, 136]>, fillcolor="#399de5df"] ;
+0 -> 8 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+9 [label=<fractal_dim_mean &le; 0.6653<br/>gini = 0.4082<br/>samples = 14<br/>value = [10, 4]>, fillcolor="#e5813999"] ;
+8 -> 9 ;
+10 [label=<gini = 0.0<br/>samples = 10<br/>value = [10, 0]>, fillcolor="#e58139ff"] ;
+9 -> 10 ;
+11 [label=<gini = 0.0<br/>samples = 4<br/>value = [0, 4]>, fillcolor="#399de5ff"] ;
+9 -> 11 ;
+12 [label=<concave_pts_worst &le; -0.2847<br/>gini = 0.0956<br/>samples = 139<br/>value = [7, 132]>, fillcolor="#399de5f1"] ;
+8 -> 12 ;
+13 [label=<gini = 0.497<br/>samples = 13<br/>value = [7, 6]>, fillcolor="#e5813924"] ;
+12 -> 13 ;
+14 [label=<gini = 0.0<br/>samples = 126<br/>value = [0, 126]>, fillcolor="#399de5ff"] ;
+12 -> 14 ;
+}
